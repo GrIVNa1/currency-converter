@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Конвертер валют</h2>
+        <label for="currency">Выберите валюту:</label>
+        <select id="currency">
+            <option value="USD">Доллар (USD)</option>
+            <option value="EUR">Евро (EUR)</option>
+            <option value="RUB">Рубль (RUB)</option>
+            <option value="GBP">Фунт (GBP)</option>
+        </select>
+        <button onclick="getCurrencyRates()">Получить курс</button>
+
+        <div id="result" class="result"></div>
+        <div id="error" class="error"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
